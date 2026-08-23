@@ -1,0 +1,180 @@
+{
+  "summary": {
+    "original_document": "examples/second_document.docx",
+    "edited_document": "live_verification/second_live_edited.docx",
+    "generated_at": "2026-08-11T05:00:22+00:00",
+    "execution_time_seconds": 0.003,
+    "validation_status": "FAIL",
+    "assertions_executed": 17,
+    "assertions_passed": 16,
+    "assertions_failed": 1
+  },
+  "package_error": null,
+  "structural_differences": [
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Section 1",
+      "element": "Page size & orientation",
+      "expected": "11906x16838 portrait",
+      "actual": "11909x16834 portrait",
+      "status": "FAIL",
+      "detail": ""
+    }
+  ],
+  "all_assertions": [
+    {
+      "assertion_name": "Footnotes",
+      "section": "Document",
+      "element": "Footnote count",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header part(s) present",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header reference wiring",
+      "expected": "sectPr reference resolves to a real part",
+      "actual": "sectPr reference resolves to a real part",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer part(s) present",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer reference wiring",
+      "expected": "sectPr reference resolves to a real part",
+      "actual": "sectPr reference resolves to a real part",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Page Number Fields",
+      "section": "Document",
+      "element": "Page number field code present",
+      "expected": ">= 1 field containing ('PAGE', 'NUMPAGES', 'SECTIONPAGES')",
+      "actual": ">= 1 field containing ('PAGE', 'NUMPAGES', 'SECTIONPAGES')",
+      "status": "PASS",
+      "detail": "1 found"
+    },
+    {
+      "assertion_name": "Page Number Fields",
+      "section": "Document",
+      "element": "Page number field count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Tracked Changes",
+      "section": "Document",
+      "element": "Revision entries",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Comments",
+      "section": "Document",
+      "element": "Comment count",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Equations",
+      "section": "Document",
+      "element": "Native equation (oMath) count",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Bookmarks",
+      "section": "Document",
+      "element": "Bookmark count",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Internal Cross-References",
+      "section": "Document",
+      "element": "Cross-reference field count",
+      "expected": "0 (none in original)",
+      "actual": "0 (none in original)",
+      "status": "PASS",
+      "detail": "0"
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Document",
+      "element": "Section count",
+      "expected": "1",
+      "actual": "1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Section 1",
+      "element": "Page size & orientation",
+      "expected": "11906x16838 portrait",
+      "actual": "11909x16834 portrait",
+      "status": "FAIL",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Section 1",
+      "element": "Margins",
+      "expected": "top=1080, right=1080, bottom=1080, left=1080, header=720, footer=720, gutter=0",
+      "actual": "top=1080, right=1080, bottom=1080, left=1080, header=720, footer=720, gutter=0",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "cost": null
+}

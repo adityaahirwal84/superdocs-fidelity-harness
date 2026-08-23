@@ -1,0 +1,252 @@
+{
+  "summary": {
+    "original_document": "examples/sample_original.docx",
+    "edited_document": "live_verification/live_edited.docx",
+    "generated_at": "2026-08-10T10:09:14+00:00",
+    "execution_time_seconds": 0.002,
+    "validation_status": "FAIL",
+    "assertions_executed": 24,
+    "assertions_passed": 22,
+    "assertions_failed": 2
+  },
+  "package_error": null,
+  "structural_differences": [
+    {
+      "assertion_name": "Bookmarks",
+      "section": "Document",
+      "element": "Bookmark 'intro_ref'",
+      "expected": "bookmark exists",
+      "actual": "bookmark missing",
+      "status": "FAIL",
+      "detail": "Any cross-reference or hyperlink targeting this bookmark will now be broken."
+    },
+    {
+      "assertion_name": "Internal Cross-References",
+      "section": "Document",
+      "element": "Cross-reference field count",
+      "expected": ">= 1",
+      "actual": "0",
+      "status": "FAIL",
+      "detail": "Fewer REF/PAGEREF fields after export than before edit."
+    }
+  ],
+  "all_assertions": [
+    {
+      "assertion_name": "Footnotes",
+      "section": "Document",
+      "element": "word/footnotes.xml part",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Footnotes",
+      "section": "Document",
+      "element": "Footnote count",
+      "expected": "1",
+      "actual": "1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header part(s) present",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Header reference wiring",
+      "expected": "sectPr reference resolves to a real part",
+      "actual": "sectPr reference resolves to a real part",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer part(s) present",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Headers & Footers",
+      "section": "Document",
+      "element": "Footer reference wiring",
+      "expected": "sectPr reference resolves to a real part",
+      "actual": "sectPr reference resolves to a real part",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Page Number Fields",
+      "section": "Document",
+      "element": "Page number field code present",
+      "expected": ">= 1 field containing ('PAGE', 'NUMPAGES', 'SECTIONPAGES')",
+      "actual": ">= 1 field containing ('PAGE', 'NUMPAGES', 'SECTIONPAGES')",
+      "status": "PASS",
+      "detail": "2 found"
+    },
+    {
+      "assertion_name": "Page Number Fields",
+      "section": "Document",
+      "element": "Page number field count",
+      "expected": ">= 2",
+      "actual": ">= 2",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "assertion_name": "Tracked Changes",
+      "section": "Document (Original)",
+      "element": "<w:ins> id=10",
+      "expected": "w:id, w:author, w:date present",
+      "actual": "w:id, w:author, w:date present",
+      "status": "PASS",
+      "detail": "author='AI Editor' date='2026-08-01T11:00:00Z'"
+    },
+    {
+      "assertion_name": "Tracked Changes",
+      "section": "Document (Edited)",
+      "element": "<w:ins> id=1",
+      "expected": "w:id, w:author, w:date present",
+      "actual": "w:id, w:author, w:date present",
+      "status": "PASS",
+      "detail": "author='AI Editor' date='2026-08-01T11:00:00Z'"
+    },
+    {
+      "assertion_name": "Tracked Changes",
+      "section": "Document",
+      "element": "Revision authors present in edited export",
+      "expected": ">= 1 named author",
+      "actual": ">= 1 named author",
+      "status": "PASS",
+      "detail": "AI Editor"
+    },
+    {
+      "assertion_name": "Comments",
+      "section": "Document",
+      "element": "word/comments.xml part",
+      "expected": "present",
+      "actual": "present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Comments",
+      "section": "Document",
+      "element": "Comment count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Comments",
+      "section": "Document",
+      "element": "Comment id=1",
+      "expected": "author and date present",
+      "actual": "author and date present",
+      "status": "PASS",
+      "detail": "author='Quality Engineer' date='2026-08-01T10:00:00Z'"
+    },
+    {
+      "assertion_name": "Comments",
+      "section": "Document",
+      "element": "Comment id=1 anchor",
+      "expected": "anchored via <w:commentReference>",
+      "actual": "anchored via <w:commentReference>",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Equations",
+      "section": "Document",
+      "element": "Native equation (oMath) count",
+      "expected": ">= 1",
+      "actual": ">= 1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Bookmarks",
+      "section": "Document",
+      "element": "Bookmark 'intro_ref'",
+      "expected": "bookmark exists",
+      "actual": "bookmark missing",
+      "status": "FAIL",
+      "detail": "Any cross-reference or hyperlink targeting this bookmark will now be broken."
+    },
+    {
+      "assertion_name": "Internal Cross-References",
+      "section": "Document",
+      "element": "Cross-reference field count",
+      "expected": ">= 1",
+      "actual": "0",
+      "status": "FAIL",
+      "detail": "Fewer REF/PAGEREF fields after export than before edit."
+    },
+    {
+      "assertion_name": "Internal Cross-References",
+      "section": "Document",
+      "element": "Cross-reference target resolution",
+      "expected": "every REF/PAGEREF target resolves to an existing bookmark",
+      "actual": "every REF/PAGEREF target resolves to an existing bookmark",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Document",
+      "element": "Section count",
+      "expected": "1",
+      "actual": "1",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Section 1",
+      "element": "Page size & orientation",
+      "expected": "12240x15840 portrait",
+      "actual": "12240x15840 portrait",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "assertion_name": "Section Geometry",
+      "section": "Section 1",
+      "element": "Margins",
+      "expected": "top=1440, right=1440, bottom=1440, left=1440, header=720, footer=720, gutter=0",
+      "actual": "top=1440, right=1440, bottom=1440, left=1440, header=720, footer=720, gutter=0",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "cost": null
+}
